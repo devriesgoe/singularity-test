@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:18.04
+From: ubuntu:latest
 
 %post
 
@@ -13,3 +13,8 @@ pip3 install numpy scipy matplotlib
 pip3 install ipyparallel
 
 ipcluster nbextension enable
+
+%environment
+
+XDG_RUNTIME_DIR=""
+PATH=${PATH}:${LSF_BINDIR}
