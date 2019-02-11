@@ -9,6 +9,7 @@ Test container for dask environment
 %post
 
 apt-get -y update
+<<<<<<< HEAD
 apt-get -y install python3-pip
 
 pip3 install virtualenv
@@ -25,3 +26,5 @@ pip3 install dask[complete]
 
 XDG_RUNTIME_DIR=""
 PATH=${PATH}:${LSF_BINDIR}
+=======
+>>>>>>> 9c8092528b77f2977c79f08157758254fd1cfeb7
