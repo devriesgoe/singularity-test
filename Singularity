@@ -12,11 +12,6 @@ apt-get -y update
 apt-get -y install python3-pip
 
 pip3 install virtualenv
-mkdir $HOME/virtualenv
-cd $HOME/virtualenv
-virtualenv dask
-source $HOME/virtualenv/bin/activate
-
 pip3 install jupyter
 pip3 install numpy scipy matplotlib
 pip3 install dask[complete]
