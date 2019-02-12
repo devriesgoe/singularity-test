@@ -3,7 +3,7 @@ From: ubuntu:latest
 
 %help
 
-Test container for dask environment
+Test container for dask environment using ipyparallel
 
 
 %post
@@ -13,6 +13,7 @@ apt-get -y install python3-pip
 
 pip3 install virtualenv
 pip3 install jupyter
+pip3 install ipyparallel
 pip3 install numpy scipy matplotlib
 pip3 install dask[complete]
 
