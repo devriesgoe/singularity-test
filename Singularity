@@ -9,13 +9,16 @@ Test container for dask environment using ipyparallel
 %post
 
 apt-get -y update
-apt-get -y install python3-pip
+apt-get -y install python3-pip net-tools
+apt-get -y install graphviz libgraphviz-dev
 
 pip3 install virtualenv
 pip3 install jupyter
-pip3 install ipyparallel
 pip3 install numpy scipy matplotlib
+pip3 install ipyparallel
 pip3 install dask[complete]
+
+ipcluster nbextension enable
 
 %environment
 
