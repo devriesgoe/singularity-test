@@ -11,7 +11,6 @@ Test container for dask environment using ipyparallel
 apt-get -y update
 apt-get -y install python3-pip net-tools
 apt-get -y install graphviz libgraphviz-dev
-apt-get -y install libpython3.6-dev
 
 pip3 install jupyter
 pip3 install numpy scipy matplotlib
