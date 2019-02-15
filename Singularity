@@ -16,7 +16,7 @@ apt-get -y install libpython3.6-dev
 pip3 install jupyter
 pip3 install numpy scipy matplotlib
 pip3 install ipyparallel
-pip3 install dask[complete]
+pip3 install dask[complete] distributed
 
 ipcluster nbextension enable
 
