@@ -14,6 +14,7 @@ apt-get -y install graphviz libgraphviz-dev
 apt-get -y install libpython3.6-dev
 
 apt-get -y install nano
+apt-get -y install gvim
 
 pip3 install jupyter
 pip3 install numpy scipy matplotlib
