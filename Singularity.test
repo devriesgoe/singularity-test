@@ -28,3 +28,4 @@ ipcluster nbextension enable
 
 XDG_RUNTIME_DIR=""
 PATH=${PATH}:${LSF_BINDIR}
+PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
