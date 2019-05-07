@@ -33,3 +33,7 @@ export SINGULARITY_BINDPATH="/opt,/var/run/munge,/run/munge,/usr/lib64/libmunge.
 
 XDG_RUNTIME_DIR=""
 PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
+PATH=${PATH}:/opt/slurm/bin
+MANPATH=$MANPATH:/opt/slurm/share/man
+echo "slurmadmin:x:300:300::/opt/slurm/slurm:/bin/false" >> /etc/passwd
+echo "slurmadmin:x:300:" >> /etc/group
