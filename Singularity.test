@@ -1,0 +1,31 @@
+Bootstrap: docker
+From: ubuntu:latest
+
+%help
+
+Test container for dask environment using ipyparallel
+
+
+%post
+
+apt-get -y update
+apt-get -y install python3-pip net-tools
+apt-get -y install graphviz libgraphviz-dev
+apt-get -y install libpython3.6-dev
+
+apt-get -y install nano
+apt-get -y install vim
+apt-get -y install git
+
+pip3 install jupyter
+pip3 install numpy scipy matplotlib
+pip3 install ipyparallel
+pip3 install dask[complete] distributed --upgrade
+
+ipcluster nbextension enable
+
+%environment
+
+XDG_RUNTIME_DIR=""
+PATH=${PATH}:${LSF_BINDIR}
+#PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
