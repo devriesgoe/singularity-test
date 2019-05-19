@@ -21,13 +21,13 @@ pip3 install jupyter
 pip3 install numpy scipy matplotlib
 pip3 install ipyparallel
 pip3 install dask[complete] distributed --upgrade
-pip3 install seaborn
+pip3 install pandas seaborn
 
-ipcluster nbextension enable
+#ipcluster nbextension enable
 
 %environment
 
-XDG_RUNTIME_DIR=""
-PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
-PATH=${PATH}:/opt/slurm/bin
-MANPATH=$MANPATH:/opt/slurm/share/man
+#XDG_RUNTIME_DIR=""
+#PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
+#PATH=${PATH}:/opt/slurm/bin
+#MANPATH=$MANPATH:/opt/slurm/share/man
