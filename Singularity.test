@@ -21,6 +21,7 @@ pip3 install jupyter
 pip3 install numpy scipy matplotlib
 pip3 install ipyparallel
 pip3 install dask[complete] distributed --upgrade
+pip3 install seaborn
 
 ipcluster nbextension enable
 
