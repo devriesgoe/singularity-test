@@ -26,4 +26,3 @@ ipcluster nbextension enable
 %environment
 
 PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
-PATH=${PATH}:/opt/slurm/bin
