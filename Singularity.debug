@@ -12,3 +12,7 @@ apt-get -y update
 apt-get -y install python3-pip net-tools
 apt-get -y install graphviz libgraphviz-dev
 apt-get -y install libpython3.6-dev
+
+apt-get -y install nano
+apt-get -y install vim
+apt-get -y install git
