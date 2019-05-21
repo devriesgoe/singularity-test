@@ -22,6 +22,6 @@ ipcluster nbextension enable
 %environment
 
 XDG_RUNTIME_DIR=""
-PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
+PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python"
 PATH=${PATH}:/opt/slurm/bin
 MANPATH=$MANPATH:/opt/slurm/share/man
