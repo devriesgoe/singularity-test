@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: ubuntu:latest
+
+%help
+
+Test container for dask environment using ipyparallel
+
+
+%post
+
+apt-get -y update
+apt-get -y install python3-pip net-tools
+apt-get -y install graphviz libgraphviz-dev
+apt-get -y install libpython3.6-dev
