@@ -32,7 +32,7 @@ ipcluster nbextension enable
 %environment
 
 XDG_RUNTIME_DIR=""
-PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python
+PYTHONPATH="${PYTHONPATH}:${HOME}/testenv/git/ProxPython:${HOME}/testenv/git/samsara/python"
 PATH=${PATH}:/opt/slurm/bin
 MANPATH=$MANPATH:/opt/slurm/share/man
 echo "slurmadmin:x:300:300::/opt/slurm/slurm:/bin/false" >> /etc/passwd
