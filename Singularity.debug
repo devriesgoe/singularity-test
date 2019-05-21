@@ -16,3 +16,8 @@ apt-get -y install libpython3.6-dev
 apt-get -y install nano
 apt-get -y install vim
 apt-get -y install git
+
+pip3 install jupyter
+pip3 install numpy scipy matplotlib
+pip3 install ipyparallel
+pip3 install dask[complete] distributed --upgrade
