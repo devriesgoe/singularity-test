@@ -24,7 +24,7 @@ pip3 install dask[complete] distributed --upgrade
 
 ipcluster nbextension enable
 
-#export SINGULARITY_BINDPATH="/opt,/var/run/munge,/run/munge,/usr/lib64/libmunge.so.2,/usr/lib64/libmunge.so.2.0.0,/etc/profile.d/slurm.sh"
+export SINGULARITY_BINDPATH="/opt,/var/run/munge,/run/munge,/usr/lib64/libmunge.so.2,/usr/lib64/libmunge.so.2.0.0,/etc/profile.d/slurm.sh"
 
 #echo 'slurmadmin:x:300:300::/opt/slurm/slurm:/bin/false' >> /etc/passwd
 #echo 'slurmadmin:x:300:' >> /etc/group
